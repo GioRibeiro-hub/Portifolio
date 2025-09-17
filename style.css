@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: rgb(17, 17, 17);
+    color:lime;
+}
+
+.destaqueTitulo {
+    color:white;
+}
+
+.destaqueParagrafo {
+    color:white;
+}
+
+.apresentacao {
+    margin:10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+    height: 482px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    font-family: 'Courier Prime', monospace;
+}
+
+.apresentacao__conteudo__paragrafo {
+    font-size: 24px;
+    font-family: 'Courier New', monospace;
+}
