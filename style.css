@@ -35,31 +35,47 @@ body{
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 40px;
+    font-size: 50px;
     font-family: 'Courier Prime', monospace;
 }
 
 .apresentacao__conteudo__paragrafo {
-    font-size: 30px;
+    font-size: 35px;
     font-family: 'Courier New', monospace;
 }
 
 .botões_redes-sociais {
     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 32px;
     justify-content: space-between;
 }
 
 .links__botoes {
-    background-color:#00ff00;
-    width: 280px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 16px;
+    border: 2px solid #00ff00;
+    width: 378px;
     text-align: center;
-    border-radius: 16px;
+    border-radius: 4px;
     padding: 21.5px 0px;
     font-size: 30px;
     font-family: 'Courier Prime', monospace;
     font-weight: 700;
     text-decoration: none;
-    color:white;
+    color: #00ff00;
+}
+
+.icones{
+    width:40px;
+    height:auto;
+}
+
+.links__botoes:hover{
+    background-color: #00ff00;
+    color: white;
 }
 
 .minha__foto {
@@ -67,4 +83,11 @@ body{
     height: auto;
     border-radius: 90%;
     border: 5px solid #00ff00;
+}
+
+.apresentacao__titulo__links{
+    font-family: 'Courier Prime', monospace;
+    color:#00ff00;
+    font-size: 35px;
+    font-weight: 400;
 }
