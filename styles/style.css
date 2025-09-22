@@ -5,19 +5,29 @@
     padding: 0;
 }
 
+:root{
+    --cor-principal: #0D0208;
+    --cor-secundaria: #00ff00;
+    --cor-tercearia: white;
+    --cor-hover: #00ff00;
+    --cor-borda-hover:#00ff00;
+
+    --fonte-primaria: 'Courier Prime', monospace;
+    --fonte-secundaria: 'Courier New', monospace;
+}
 body{
     /* height: 100vh; */
     box-sizing: border-box;
     background-color: rgb(17, 17, 17);
-    color:#00ff00;
+    color:var(--cor-secundaria);
 }
 
 .destaqueTitulo {
-    color:white;
+    color:var(--cor-tercearia);
 }
 
 .destaqueParagrafo {
-    color:white;
+    color:var(--cor-tercearia);
 }
 
 .apresentacao {
@@ -36,12 +46,12 @@ body{
 
 .apresentacao__conteudo__titulo {
     font-size: 35px;
-    font-family: 'Courier Prime', monospace;
+    font-family: var(--fonte-primaria);
 }
 
 .apresentacao__conteudo__paragrafo {
     font-size: 25px;
-    font-family: 'Courier New', monospace;
+    font-family: var(--fonte-secundaria);
 }
 
 .botões_redes-sociais {
@@ -56,16 +66,16 @@ body{
     display: flex;
     justify-content: space-evenly;
     gap: 16px;
-    border: 2px solid white;
+    border: 2px solid var(--cor-tercearia);
     width: 378px;
     text-align: center;
     border-radius: 4px;
     padding: 21.5px 0px;
     font-size: 30px;
-    font-family: 'Courier Prime', monospace;
+    font-family: var(--fonte-primaria);
     font-weight: 700;
     text-decoration: none;
-    color: #00ff00;
+    color: var(--cor-secundaria);
 }
 
 .icones{
@@ -75,32 +85,32 @@ body{
 }
 
 .links__botoes:hover{
-    background-color: #00ff00;
-    color: white;
-    border-color: #00ff00;
+    background-color: var(--cor-hover);
+    color: var(--cor-tercearia);
+    border-color: var(--cor-borda-hover);
 }
 
 .minha__foto {
     width: 500px;
     height: auto;
     border-radius: 5%;
-    border: 3px solid white;
+    border: 3px solid var(--cor-tercearia);
 }
 
 .apresentacao__titulo__links{
-    font-family: 'Courier Prime', monospace;
-    color:#00ff00;
+    font-family: var(--fonte-primaria);
+    color:var(--cor-secundaria);
     font-size: 25px;
     font-weight: 400;
 }
 
 .rodape{
     padding: 24px;  
-    color: white;
+    color: var(--cor-tercearia);
     /* background-color: #00ff00; */
-    border: 3px solid white;
+    border: 3px solid var(--cor-tercearia);
     text-align: center;
-    font-family:'Courier Prime', monospace;
+    font-family:var(--fonte-primaria);
     font-size: 20px;
 }
 
@@ -114,8 +124,8 @@ body{
     gap: 80px;
 }
 .cabecalho__menu__item{
-    color: white;
-    font-family:'Courier Prime', monospace;
+    color: var(--cor-tercearia);
+    font-family:var(--fonte-primaria);
     font-size:24px;
     font-weight: 600;
     text-decoration: none;
