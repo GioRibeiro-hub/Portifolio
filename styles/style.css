@@ -31,14 +31,15 @@ body{
 }
 
 .apresentacao {
-    margin: 5% 15%;
+    padding: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .apresentacao__conteudo {
-    width: 800px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -67,11 +68,11 @@ body{
     justify-content: space-evenly;
     gap: 16px;
     border: 2px solid var(--cor-tercearia);
-    width: 378px;
+    width: 50%;
     text-align: center;
     border-radius: 4px;
     padding: 21.5px 0px;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: var(--fonte-primaria);
     font-weight: 700;
     text-decoration: none;
@@ -90,8 +91,8 @@ body{
     border-color: var(--cor-borda-hover);
 }
 
-.minha__foto {
-    width: 500px;
+.apresetacao__imagem {
+    width: 40%;
     height: auto;
     border-radius: 5%;
     border: 3px solid var(--cor-tercearia);
@@ -135,4 +136,23 @@ body{
     color: var(--cor-hover);
     text-decoration: underline;
     text-decoration-style: dashed;
+}
+
+@media (max-width:1200px){
+    .cabecalho{
+        padding: 12%;
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+        width: auto;
+    }
+    .links__botoes{
+        width: auto;
+        font-weight: auto;
+    }
 }
